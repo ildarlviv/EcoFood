@@ -8,8 +8,22 @@
 	font-size: 16px;
 }
 
+
+html {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: ;
+
+}
+
 h2 {
 	width:  100%;
+	font-size: 0,825rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 50px 0 10px 0;
 }
 
 a{
@@ -103,4 +117,55 @@ header > a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 20px;
+}
+
+.my-15 {
+	margin: 15px 0;
+}
+
+.products > article > h3 {
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
+.img-wrapper {
+	background-image: url(../img/empty-bg.jpg);
+}
+
+.img-wrapper > form {
+	display: flex;
+	flex-direction: column;
+	padding: 100px 25%;
+	gap: 15px;
+	text-align: center;
+}
+
+input[type="email"] {
+	padding: 4px;
+}
+
+.discount {
+	font-weight: 600;
+	color: white;
+	font-size: 1,5 rem;
+}
+
+.discount > span {
+	text-transform: uppercase;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+footer > section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+footer > section > article {
+	width: 30%;
 }
