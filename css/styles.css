@@ -34,12 +34,15 @@ body {
 	background: url(../img/bg.png) no-repeat center;
 	background-size: cover;	
 	background-attachment: fixed;
+
+	display: flex;
+	justify-content: center;
 	}
 
 .wrapper {
 	background-color: white;
 	margin: 50px 10%;
-	max-width: 1920px;
+	max-width: 1024px;
 	padding: 60px 40px;
 	}
 
@@ -72,6 +75,9 @@ body {
 	transition: all 0.5s;
 }
 
+hr {
+	margin: 50px 0;
+}
 
 nav > a{
 	border-bottom: 2px solid transparent;
@@ -124,9 +130,10 @@ header > a {
 	margin: 15px 0;
 }
 
-.products > article > h3 {
+h3 {
 	font-size: 1.75rem;
 	font-weight: 500;
+	margin: 8px 0;
 }
 
 .img-wrapper {
@@ -158,14 +165,70 @@ input[type="email"] {
 footer {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 footer > section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 15;
 }
 
 footer > section > article {
-	width: 30%;
+	min-width: 100px;
+	max-width: 200px;
+	
+}
+
+.social-links {
+	margin: 50px 0;
+}
+
+.social-links > a {
+	border: 20px solid black;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	transition: all 0.5s;'
+	line-height: 16px;
+}
+
+.social-links > a:hover {
+	border: 20px solid #91ac27;
+	background-color: #91ac27;
+}
+
+@media only screen and (max-width: 425px) {
+	
+	body {
+		background: none;
+	}
+
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header > a {
+		margin-bottom: 20px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	header > section {
+		width: 100%;
+		text-align: center;
+	}
+
+	.wrapper {
+		margin: 0;
+		padding: 0;
+	}
 }
