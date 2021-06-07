@@ -7,6 +7,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -14,14 +16,23 @@
 			<a href="#"><img src="img/logo.png" alt="logo"></a>
 			<section>
 				<a href="#" class="button">Login</a>
-				<a href="#" class="link">Cart (<span>0</span>)</a>
+				<a href="#" class="link">Cart<i class="fas fa-shopping-basket"></i>	(<span>0</span>)</a>
 				<button class="button">Clear cart</button>
 			</section>
-			<nav>
-				<a href="#" class="link">Home</a>
-				<a href="#" class="link">Catalog</a>
-				<a href="#" class="link">About us</a>
-				<a href="#" class="link">Contact</a>
+			<nav id="menuToggle">
+				<!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+				<input type="checkbox"/>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<li><a href="#" class="link">Home</a></li>
+					<li><a href="#" class="link">Catalog</a></li>
+					<li><a href="#" class="link">About us</a></li>
+					<li><a href="#" class="link">Contact</a></li>
+				</ul>
 			</nav>
 			<hr>
 		</header>
@@ -36,7 +47,7 @@
 				<article id="1">
 					<img src="img/kiwi.jpg" alt="kiwi">
 					<h3>Kiwi</h3>
-					<p>$7<p>
+					<p  class="my-15">$7<p>
 					<button class="button">Add to cart</button>
 				</article>	
 				<article id="2">
@@ -70,13 +81,13 @@
 					<button class="button">Add to cart</button>
 				</article>
 				<article id="7">
-					<img src="kiwi.jpg" alt="kiwi">
+					<img src="img/kiwi.jpg" alt="kiwi">
 					<h3>Kiwi</h3>
 					<p>$7<p>
 					<button class="button">Add to cart</button>
 				</article>
 				<article id="8">
-					<img src="kiwi.jpg" alt="kiwi">
+					<img src="img/kiwi.jpg" alt="kiwi">
 					<h3>Kiwi</h3>
 					<p>$7<p>
 					<button class="button">Add to cart</button>
@@ -84,33 +95,35 @@
 			</section>
 			<section>
 				<h2>Your personal sales guide...</h2>
-				<form action="#">
-					<p>stay up to date with <span>discount</span>...</p>
-					<input type="email" name="email" placeholder="Enter your email..."/>
-					<input type="submit" value="Subscribe" class="button"/>
-				</form>
+				<div class="img-wrapper">
+					<form action="#">
+						<p class="discount">stay up to date with <span>discount</span>...</p>
+						<input type="email" name="email" placeholder="Enter your email..."/>
+						<input type="submit" value="Subscribe" class="button"/>
+					</form>
+				</div>
 			</section>
 		</main>
 		<footer>
 			<hr/>
 			<section>
 				<article>
-					<h2>Healing with Honey</h2>
-					<p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+					<h3><i class="fas fa-tree"></i>Healing with Honey</h3>					
+						<p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
 				</article>
 				<article>
-					<h2>Healing with Honey</h2>
-					<p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+					<h3><i class="fab fa-codepen"></i>Healing with Honey</h3>
+						<p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
 				</article>
 				<article>
-					<h2>Healing with Honey</h2>
-					<p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+					<h3><i class="fas fa-cubes"></i>Healing with Honey</h3>
+						<p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
 				</article>
 			</section>
-			<section>
-				<a href="facebook.com">f</a>
-				<a href="#">u</a>
-				<a href="#">i</a>
+			<section class="social-links">
+				<a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-instagram-square"></i></a>
 			</section>
 			<p>&copy; All rights reserved.</p>
 		</footer>
