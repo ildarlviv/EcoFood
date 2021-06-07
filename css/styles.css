@@ -13,10 +13,6 @@ html {
 	font-size: 16px;
 }
 
-h3 {
-	font-size: ;
-
-}
 
 h2 {
 	width:  100%;
@@ -155,12 +151,10 @@ input[type="email"] {
 .discount {
 	font-weight: 600;
 	color: white;
-	font-size: 1,5 rem;
-}
-
-.discount > span {
+	font-size: 1,5em;	
 	text-transform: uppercase;
 }
+
 
 footer {
 	display: flex;
@@ -172,7 +166,7 @@ footer > section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 15;
+	gap: 15px;
 }
 
 footer > section > article {
@@ -193,7 +187,7 @@ footer > section > article {
 	text-align: center;
 	background-color: black;
 	color: white;
-	transition: all 0.5s;'
+	transition: all 0.5s;
 	line-height: 16px;
 }
 
@@ -203,7 +197,7 @@ footer > section > article {
 }
 
 @media only screen and (max-width: 425px) {
-	
+
 	body {
 		background: none;
 	}
@@ -220,7 +214,7 @@ footer > section > article {
 
 	nav {
 		display: none;
-	}
+	}a
 
 	header > section {
 		width: 100%;
